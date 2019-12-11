@@ -17,11 +17,26 @@
     </environment>
     <style>
         body{
-            color: white;
+            color: coral;
             background-image : url(../images/bg2.jpeg);
             background-repeat : no-repeat;
             background-size : cover;
+            font-size: 25px;
+            
         }
+        a {
+            color : yellow;
+        }
+           footer{
+                 font-size: 5px;
+                 position:absolute;
+                 top: 96%;
+                 left: 550%;
+                 margin-right: -30%;
+                 transform: translate(-50%, -50%)
+                 
+
+            }
     </style>
 </head>
 <body>
@@ -34,7 +49,12 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand">Cheetah Racing</a>
+                <a class="navbar-brand" asp-action="index" asp-controller="home">
+                    <img src="~/images/logo1.png" height="30" width="30" />
+                </a>
+                    <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand">Cheetah Racing</a>
+
+                
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">                    

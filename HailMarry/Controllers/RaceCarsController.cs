@@ -54,7 +54,7 @@ namespace HailMarry.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("RaceCarsId,Make,Model,Year,Photo")] RaceCars raceCars)
+        public async Task<IActionResult> Create([Bind("RaceCarsId,Make,Model,Year")] RaceCars raceCars)
         {
             if (ModelState.IsValid)
             {
@@ -86,7 +86,7 @@ namespace HailMarry.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("RaceCarsId,Make,Model,Year,Photo")] RaceCars raceCars)
+        public async Task<IActionResult> Edit(int id, [Bind("RaceCarsId,Make,Model,Year")] RaceCars raceCars)
         {
             if (id != raceCars.RaceCarsId)
             {

@@ -15,6 +15,14 @@
               asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute" />
         <link rel="stylesheet" href="~/css/site.min.css" asp-append-version="true" />
     </environment>
+    <style>
+        body{
+            color: white;
+            background-image : url(../images/bg2.jpeg);
+            background-repeat : no-repeat;
+            background-size : cover;
+        }
+    </style>
 </head>
 <body>
     <nav class="navbar navbar-inverse navbar-fixed-top">
@@ -26,11 +34,10 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand">HailMarry</a>
+                <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand">Cheetah Racing</a>
             </div>
             <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
+                <ul class="nav navbar-nav">                    
                     <li><a asp-area="" asp-controller="Home" asp-action="About">About</a></li>
                     <li><a asp-area="" asp-controller="Home" asp-action="Contact">Contact</a></li>
                     <li><a asp-area="" asp-controller="Discussions" asp-action="index">Discussion board</a></li>
@@ -49,7 +56,7 @@
         @RenderBody()
         <hr />
         <footer>
-            <p>&copy; 2019 - HailMarry</p>
+            <p>&copy; 2019 - Cheetah Racing</p>
         </footer>
     </div>
 

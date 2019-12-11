@@ -4,14 +4,16 @@ using HailMarry.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace HailMarry.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20191211030715_photo")]
+    partial class photo
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -64,8 +66,8 @@ namespace HailMarry.Data.Migrations
                     b.ToTable("Discussion");
 
                     b.HasData(
-                        new { DiscussionId = 1, Comment = "WE WON!!!!!", ContactInfoId = 1, PostedAt = new DateTime(2019, 12, 10, 22, 16, 50, 925, DateTimeKind.Local) },
-                        new { DiscussionId = 2, Comment = "WE LOST!!!!!", ContactInfoId = 2, PostedAt = new DateTime(2019, 12, 10, 22, 16, 50, 928, DateTimeKind.Local) }
+                        new { DiscussionId = 1, Comment = "WE WON!!!!!", ContactInfoId = 1, PostedAt = new DateTime(2019, 12, 10, 22, 7, 14, 740, DateTimeKind.Local) },
+                        new { DiscussionId = 2, Comment = "WE LOST!!!!!", ContactInfoId = 2, PostedAt = new DateTime(2019, 12, 10, 22, 7, 14, 743, DateTimeKind.Local) }
                     );
                 });
 

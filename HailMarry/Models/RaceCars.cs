@@ -16,5 +16,6 @@ namespace BackupProject.Models
         public virtual string Model { get; set; }
         [Required]
         public virtual string Year { get; set; }
+        public virtual string Photo { get; set; }
     }
 }

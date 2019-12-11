@@ -7,9 +7,11 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using BackupProject.Models;
 using HailMarry.Data;
+using Microsoft.AspNetCore.Authorization;
 
 namespace HailMarry.Controllers
 {
+    [Authorize]
     public class ContactInfoesController : Controller
     {
         private readonly ApplicationDbContext _context;

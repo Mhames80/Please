@@ -24,7 +24,7 @@ namespace HailMarry.Controllers
 
         public IActionResult Contact()
         {
-            ViewData["Message"] = "Your contact page.";
+            ViewData["Message"] = "Please Feel free to reach out to us";
 
             return View();
         }

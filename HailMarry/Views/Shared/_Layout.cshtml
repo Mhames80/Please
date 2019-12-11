@@ -15,13 +15,13 @@
               asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute" />
         <link rel="stylesheet" href="~/css/site.min.css" asp-append-version="true" />
     </environment>
-    <style>
+    <style>@*Added a image and changed the textcolor and size and got rid of the footer*@
         body{
             color: coral;
             background-image : url(../images/bg2.jpeg);
             background-repeat : no-repeat;
             background-size : cover;
-            font-size: 25px;
+            font-size: 17px;
             
         }
         a {
@@ -37,6 +37,10 @@
                  
 
             }
+           hr {
+               border: 0px;
+               border-top: 0px;
+           }
     </style>
 </head>
 <body>
@@ -48,7 +52,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
-                </button>
+                </button>@*Added our logo that Mark Song Made to the nav bar-Yolanda*@
                 <a class="navbar-brand" asp-action="index" asp-controller="home">
                     <img src="~/images/logo1.png" height="30" width="30" />
                 </a>

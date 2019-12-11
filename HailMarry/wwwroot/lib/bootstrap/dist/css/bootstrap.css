@@ -101,6 +101,7 @@ hr {
   -moz-box-sizing: content-box;
   box-sizing: content-box;
   height: 0;
+  text-decoration:none;
 }
 pre {
   overflow: auto;
@@ -6830,5 +6831,8 @@ button.close {
   .hidden-print {
     display: none !important;
   }
+}
+hr {
+      text-decoration:none;
 }
 /*# sourceMappingURL=bootstrap.css.map */
